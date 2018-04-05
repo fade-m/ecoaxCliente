@@ -1,0 +1,37 @@
+<form (submit)="logIn($event)" name="loginUserForm">
+    <div class="login-box">
+        <div class="login-logo">
+            <div class=" col-lg-12">
+                <img width="60" height="60" src="../../../assets/images/ecologia.jpg" alt="logotipo" />
+            </div>
+            <p>
+                ECOAX
+            </p>
+        </div>
+        <div class="login-box-body">
+            <p class="login-box-msg">Ingrese sus datos para acceder.</p>
+
+            <div class="form-group has-feedback">
+                <label>Email:</label>
+                <input type="text" class="form-control" [(ngModel)]="email" name="email" placeholder="email" required>
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <label>Password: </label>
+                <input type="text" [(ngModel)]="password" class="form-control" name="password" placeholder="password" required>
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+               
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                        <button ng-disabled="!loginUserForm.$valid" class="btn btn-primary btn-block btn-flat" type="submit" >LogIn</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                        <a href="/signup">Reegistrate!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

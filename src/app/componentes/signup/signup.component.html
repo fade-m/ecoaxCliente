@@ -1,0 +1,90 @@
+
+
+<form (submit)="signUp($event)">
+  <div class="login-box">
+      <div class="login-logo">
+          <div class=" col-lg-12">
+              <img width="60" height="60" src="../../../assets/images/ecologia.jpg" alt="logotipo" />
+          </div>
+          <p>
+              ECOAX
+          </p>
+      </div>
+      <div class="login-box-body">
+          <p class="login-box-msg">Ingrese sus datos para registrarte.</p>
+
+          <div class="form-group has-feedback">
+              <label>Nombre:</label>
+              <input type="text" class="form-control" [(ngModel)]="usuario.nombre" name="email" placeholder="Nombre" required>
+              <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Apellido Paterno:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.apellidoPaterno" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Apellido Materno:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.apellidoMaterno" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+              <label>Alias: </label>
+              <input type="text" [(ngModel)]="usuario.alias" class="form-control" name="password" placeholder="password" required>
+              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Password:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.password" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Fecha de nacimiento:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.fechaNacimiento" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Estado de la republica:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.estadoDeLaRepublica" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Municipio:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.municipio" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Email:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.email" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Numero teleofnico:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.numeroTelefonico" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-feedback">
+            <label>Configuracion:</label>
+            <input type="text" class="form-control" [(ngModel)]="usuario.configuracion" name="email" placeholder="email" required>
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+
+
+          <div class="row">
+              <div class="col-xs-4">
+                      <button class="btn btn-primary btn-block btn-flat" type="submit" >SignUp</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</form>
